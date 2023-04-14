@@ -15,7 +15,7 @@ const Box = () => {
                 <p className="border-b-2 flex justify-between">Comedy <input type="checkbox" name="comedy" id="comedy" /></p>
                 <p className="border-b-2 flex justify-between">Crime <input type="checkbox" name="crime" id="crime" /></p>
                 <p className="border-b-2 flex justify-between">Fantasy <input type="checkbox" name="fantasy" id="fantasy" /></p>
-                <p className="text-center">See more</p>
+                <p className="text-center text-grey">See more</p>
             </div>
             <div className="flex justify-between">
                 <p className="text-white pl-5">Services</p>
@@ -28,7 +28,7 @@ const Box = () => {
                 <p className="border-b-2 flex justify-between">HBO max <input type="checkbox" name="hbo" id="hbo" /></p>
                 <p className="border-b-2 flex justify-between">Hulu <input type="checkbox" name="hulu" id="hulu" /></p>
                 <p className="border-b-2 flex justify-between">Starz <input type="checkbox" name="starz" id="starz" /></p>
-                <p className="text-center">See more</p>
+                <p className="text-center text-grey">See more</p>
             </div>
         </article>
      );
