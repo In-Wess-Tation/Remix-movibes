@@ -3,7 +3,7 @@
 
 const Search = () => {
     return ( 
-        <div className="w-full h-10 bg-grey text-grey rounded-3xl m-2">
+        <div className="w-full h-12 text-grey rounded-3xl mt-10 p-3 pl-8 font-bold bg-darkGrey">
             <p>Search for movies, TV shows...</p>
         </div>
      );

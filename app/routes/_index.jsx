@@ -3,9 +3,11 @@ import Header from "../components/Header";
 import { json } from "@remix-run/node";
 import { Link } from "react-router-dom";
 import Box from "../components/Box";
-import Filter from "../components/Filter";
 
 import "remixicon/fonts/remixicon.css";
+import Search from "../components/search";
+import Notification from "../components/Notification";
+import Profile from "../components/Profile";
 
 
 
@@ -70,8 +72,11 @@ export default function Index() {
   return (
     <section className="flex bg-dark">
       <Header />
-      <article>
-      <article className="pt-16 pl-10 pb-16">
+      <article className="pl-10">
+
+      <Search />
+
+      <article className="pt-16 pb-16">
         { trendings.results?.map((trending, index) => (
             index < 1 ? 
             <Link key={trending.id} to={`/detail/${trending.id}`}><div key={index}><img className="rounded-2xl object-cover h-72 w-full" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
@@ -79,8 +84,8 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 pl-10 text-2xl font-bold">Trending</h2>
-        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end pl-10 text-white w-3/3">
+        <h2 className="text-white p-5 text-2xl font-bold">Trending</h2>
+        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { trendings.results?.map((trending, index) => (
             index < 4 ? 
             <Link key={trending.id} to={`/detail/${trending.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {trending.vote_average}</p><img className="rounded-2xl" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
@@ -88,8 +93,8 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 pl-10 text-2xl font-bold">Upcomming</h2>
-        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end pl-10 text-white w-3/3">
+        <h2 className="text-white p-5 text-2xl font-bold">Upcomming</h2>
+        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { upCommings.results?.map((upComming, index) => (
             index < 4 ? 
             <Link key={upComming.id} to={`/detail/${upComming.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {upComming.vote_average}</p><img className="rounded-2xl" src={imgPath + upComming.poster_path} alt={upComming.poster_path} /></div></Link>       
@@ -97,8 +102,8 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 pl-10 text-2xl font-bold">Tv Series</h2>
-        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end pl-10 text-white w-3/3">
+        <h2 className="text-white p-5 text-2xl font-bold">Tv Series</h2>
+        <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { tvSeries.results?.map((tvSerie, index) => (
             index < 4 ? 
             <Link key={tvSerie.id} to={`/detail/${tvSerie.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {tvSerie.vote_average}</p><img className="rounded-2xl" src={imgPath + tvSerie.poster_path} alt={tvSerie.poster_path} /></div></Link>       
@@ -107,8 +112,11 @@ export default function Index() {
         </article>
       </article>
       <div>
+        <div className="flex">
+          <Notification />
+          <Profile />
+        </div>
         <Box /> 
-        <Filter />
       </div>
  
     </section>
