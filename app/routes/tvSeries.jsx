@@ -18,7 +18,7 @@ export function loader() {
 }
 
 export const tvSeries = () => {
-  return [{ title: "Movibes" }];
+  return [{ title: "Tv Series" }];
 };
 
 export default function Index() {

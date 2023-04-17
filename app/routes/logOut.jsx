@@ -2,7 +2,7 @@ import Header from "../components/Header";
 
 
 export const logOut = () => {
-  return [{ title: "Movibes" }];
+  return [{ title: "Log out" }];
 };
 
 export default function Index() {

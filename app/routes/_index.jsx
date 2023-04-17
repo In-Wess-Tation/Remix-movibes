@@ -1,13 +1,13 @@
 import { useLoaderData } from "react-router";
-import Header from "../components/Header";
 import { json } from "@remix-run/node";
 import { Link } from "react-router-dom";
-import Box from "../components/Box";
 
 import "remixicon/fonts/remixicon.css";
+import Header from "../components/Header";
 import Search from "../components/Search";
 import Notification from "../components/Notification";
 import Profile from "../components/Profile";
+import Box from "../components/Box";
 
 
 

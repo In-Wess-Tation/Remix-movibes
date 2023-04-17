@@ -18,7 +18,7 @@ export function loader() {
 }
 
 export const upComing = () => {
-  return [{ title: "Movibes" }];
+  return [{ title: "Upcomming" }];
 };
 
 export default function Index() {
