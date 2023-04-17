@@ -35,7 +35,7 @@ export default function Index() {
            
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end pl-16 text-white w-3/3">
         { movies?.map((movie, index) => (   
-                <Link key={movie.id} to={`/detail/${movie.id}`}><div className="rounded-lg" key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {movie.vote_average}</p><img src={imgPath + movie.poster_path} alt={movie.poster_path} /></div></Link>
+                <Link key={movie.id} to={`/details/${movie.id}`}><div className="rounded-lg" key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {movie.vote_average}</p><img src={imgPath + movie.poster_path} alt={movie.poster_path} /></div></Link>
                     
                 ))}
         </article>

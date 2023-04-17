@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Box from "../components/Box";
 
 import "remixicon/fonts/remixicon.css";
-import Search from "../components/search";
+import Search from "../components/Search";
 import Notification from "../components/Notification";
 import Profile from "../components/Profile";
 
@@ -79,8 +79,8 @@ export default function Index() {
       <article className="pt-16 pb-16">
         { trendings.results?.map((trending, index) => (
             index < 1 ? 
-            <Link key={trending.id} to={`/detail/${trending.id}`}><div key={index}><img className="rounded-2xl object-cover h-72 w-full" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
-            : null     
+            <Link key={trending.id} to={`/details/${trending.id}`}><div key={index}><img className="rounded-2xl object-cover h-72 w-full" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
+            : null
             ))}
         </article>
 
@@ -88,7 +88,7 @@ export default function Index() {
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { trendings.results?.map((trending, index) => (
             index < 4 ? 
-            <Link key={trending.id} to={`/detail/${trending.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {trending.vote_average}</p><img className="rounded-2xl" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
+            <Link key={trending.id} to={`/details/${trending.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {trending.vote_average}</p><img className="rounded-2xl" src={imgPath + trending.poster_path} alt={trending.poster_path} /></div></Link>       
             : null     
             ))}
         </article>
@@ -97,7 +97,7 @@ export default function Index() {
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { upCommings.results?.map((upComming, index) => (
             index < 4 ? 
-            <Link key={upComming.id} to={`/detail/${upComming.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {upComming.vote_average}</p><img className="rounded-2xl" src={imgPath + upComming.poster_path} alt={upComming.poster_path} /></div></Link>       
+            <Link key={upComming.id} to={`/details/${upComming.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {upComming.vote_average}</p><img className="rounded-2xl" src={imgPath + upComming.poster_path} alt={upComming.poster_path} /></div></Link>       
             : null     
             ))}
         </article>
@@ -106,7 +106,7 @@ export default function Index() {
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { tvSeries.results?.map((tvSerie, index) => (
             index < 4 ? 
-            <Link key={tvSerie.id} to={`/detail/${tvSerie.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {tvSerie.vote_average}</p><img className="rounded-2xl" src={imgPath + tvSerie.poster_path} alt={tvSerie.poster_path} /></div></Link>       
+            <Link key={tvSerie.id} to={`/details/${tvSerie.id}`}><div key={index}><p> <span> < i className="ri-star-fill text-peach h-10 w-10"></i> </span> {tvSerie.vote_average}</p><img className="rounded-2xl" src={imgPath + tvSerie.poster_path} alt={tvSerie.poster_path} /></div></Link>       
             : null     
             ))}
         </article>
