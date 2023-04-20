@@ -8,7 +8,7 @@ export const logOut = () => {
 export default function Index() {
   return (
     <section className="flex">
-      <div>
+      <div className="w-72">
       <Header />
       </div>
 

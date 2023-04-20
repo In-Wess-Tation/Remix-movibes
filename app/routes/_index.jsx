@@ -84,7 +84,7 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 text-2xl font-bold">Trending</h2>
+        <h2 className="text-white text-2xl font-bold">Trending</h2>
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { trendings.results?.map((trending, index) => (
             index < 4 ? 
@@ -93,7 +93,7 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 text-2xl font-bold">Upcomming</h2>
+        <h2 className="text-white pt-5 text-2xl font-bold">Upcomming</h2>
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { upCommings.results?.map((upComming, index) => (
             index < 4 ? 
@@ -102,7 +102,7 @@ export default function Index() {
             ))}
         </article>
 
-        <h2 className="text-white p-5 text-2xl font-bold">Tv Series</h2>
+        <h2 className="text-white pt-5 text-2xl font-bold">Tv Series</h2>
         <article className="grid grid-rows-1 grid-cols-4 gap-16 text-end text-white w-3/3">
         { tvSeries.results?.map((tvSerie, index) => (
             index < 4 ? 
