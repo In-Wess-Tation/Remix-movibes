@@ -4,7 +4,7 @@ import "remixicon/fonts/remixicon.css";
 
 const Header = () => {
 
-    const activeLink = "h-full bg-teal text-teal p-6 bg-opacity-50 flex items-center justify-center border-r-4 border-teal  font-semibold pr-10"
+    const activeLink = "h-full bg-teal text-teal p-10 bg-opacity-50 border-r-4 border-teal  font-semibold pr-10"
     const normalLink = "h-full p-10 font-semibold m-auto text-grey pr-10"
 
     return ( 
